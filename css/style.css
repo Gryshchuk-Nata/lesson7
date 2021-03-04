@@ -1,0 +1,307 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,regular,italic,700,700italic,900,900italic&display=swap&subset=cyrillic-ext");
+
+@font-face {
+	font-family: "Proxima Nova Cn Th";
+	src: url("ProximaNovaCond-ThinIt.woff2") format("woff2"), url("ProximaNovaCond-ThinIt.woff") format("woff");
+	font-weight: 100;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Proxima Nova Rg";
+	src: url("../fonts/ProximaNova-Regular.woff2") format("woff2"),
+		url("../fonts/ProximaNova-Regular.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Proxima Nova Rg";
+	src: url("../fonts/ProximaNova-BoldIt.woff2") format("woff2"), url("../fonts/ProximaNova-BoldIt.woff") format("woff");
+	font-weight: bold;
+	font-style: italic;
+	font-display: swap;
+}
+
+/* Стили обнуления */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+li {
+	list-style: none;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+img {
+	vertical-align: top;
+}
+page {
+	line-height: 1;
+	color: #000;
+}
+/* ------------------ */
+
+body {
+	background-image: url("../img/img-pattern-page.jpg");
+}
+
+/* Меню*/
+.header__menu {
+	color: white;
+	font-size: 20px;
+	font-family: "Proxima Nova Rg";
+	font-style: normal;
+	text-transform: uppercase;
+}
+
+.header__button {
+	color: white;
+	font-size: 20px;
+	font-family: "Proxima Nova Rg";
+	font-style: normal;
+	text-transform: uppercase;
+	background: linear-gradient(#ff59a6, #ff2c7a);
+	border-radius: 25px;
+	padding: 10px 30px;
+}
+.header__nav li,
+.header__logo a {
+	display: inline-block;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 15px;
+}
+.header div {
+	display: inline-block;
+	margin: 10px;
+	padding: 10px;
+	vertical-align: middle;
+	line-height: 40px;
+}
+
+.header__logo img {
+	width: 200px;
+}
+
+/*блоки с картинками и текстом на странице*/
+
+.main__block {
+	font-size: 20px;
+	line-height: 35px;
+	font-family: "Proxima Nova Rg";
+	text-align: justify;
+	letter-spacing: 0.1em;
+	word-spacing: 0.2em;
+}
+
+.background__item {
+	text-align: center;
+	display: block;
+	min-height: 300px;
+}
+.background__item p {
+	text-align: justify;
+}
+
+.block__text {
+	margin: 0 0 100px 0;
+	padding: 25px;
+	text-shadow: 0 0 10px #6817d3, 0 0 10px #23ebeb;
+	outline: 1px solid rgba(56, 56, 165, 0.349);
+	box-shadow: inset 0 10px 10px 1px rgba(15, 107, 226, 0.842), inset -5px 0 10px 0 rgba(131, 18, 175, 0.842),
+		inset 3px 0 10px 0 rgba(109, 106, 106, 0.842);
+}
+
+.block__text img {
+	float: left;
+	max-width: 300px;
+	margin: 0 10px 0 10px;
+}
+
+h1,
+h2,
+h3 {
+	color: #086b7a;
+	font-size: 45px;
+	font-family: "Proxima Nova Rg";
+	font-weight: bold;
+	font-style: italic;
+}
+
+.background__no-repeat {
+	min-height: 300px;
+	background: url(../img/2.png) no-repeat;
+	padding: 15px;
+	margin: 15px 0px;
+}
+
+.background__repeat {
+	min-height: 300px;
+	background: url(../img/2.png) repeat-x;
+	padding: 15px;
+	margin: 15px 0px;
+}
+
+.background__space {
+	min-height: 300px;
+	background: url(../img/2.png) space;
+	padding: 15px;
+	margin: 15px 0px;
+}
+.background__repeat-y {
+	min-height: 300px;
+	background: url(../img/2.png) repeat-y;
+	padding: 15px;
+	margin: 15px 0px;
+}
+
+.background__round {
+	min-height: 300px;
+	background: url(../img/2.png) round,
+		linear-gradient(
+			to right,
+			rgba(195, 217, 255, 1) 0%,
+			rgba(30, 109, 237, 1) 99%,
+			rgba(177, 200, 239, 1) 100%,
+			rgba(152, 176, 217, 1) 100%
+		);
+	padding: 15px;
+	margin: 15px 0px;
+}
+
+.background__gradient {
+	min-height: 300px;
+	background: url(../img/2.png) no-repeat,
+		radial-gradient(
+			ellipse at center,
+			rgba(208, 228, 247, 1) 0%,
+			rgba(65, 150, 223, 0.6) 36%,
+			rgba(10, 119, 213, 0.6) 50%,
+			rgba(115, 177, 231, 0.6) 63%,
+			rgba(135, 188, 234, 0.6) 64%,
+			rgba(83, 159, 225, 0.6) 92%
+		);
+	padding: 15px;
+	margin: 15px 0px;
+}
+
+.background__center {
+	min-height: 300px;
+	background: url(../img/3.png) center no-repeat;
+	padding: 15px;
+	margin: 15px 0px;
+	text-shadow: 1px 4px 10px rgb(29, 25, 25);
+	font-family: "Proxima Nova Rg";
+	font-weight: 100;
+	font-style: italic;
+}
+
+.background__left {
+	min-height: 300px;
+	background: url(../img/3.png) left no-repeat;
+	padding: 15px;
+	margin: 15px 0px;
+	text-shadow: 1px 4px 10px rgb(29, 25, 25);
+	font-family: "Proxima Nova Rg";
+	font-weight: 100;
+	font-style: italic;
+}
+.background__corner {
+	min-height: 300px;
+	background: url(../img/3.png) top right no-repeat;
+	padding: 15px;
+	margin: 15px 0px;
+	text-shadow: 1px 4px 10px rgb(29, 25, 25);
+	font-family: "Proxima Nova Rg";
+	font-weight: 100;
+	font-style: italic;
+}
+
+.background__attachment {
+	min-height: 400px;
+	background-image: url(../img/4.JPG);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.background__scroll {
+	max-height: 400px;
+	overflow: auto;
+	background-image: url(../img/4.JPG);
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-size: cover;
+}
+
+.background__images {
+	margin: 50px;
+	padding: 50px;
+	color: black;
+	font-family: Lato;
+	font-style: italic;
+	text-shadow: 1px 4px 10px rgb(187, 23, 23);
+	font-size: 35px;
+	text-align: center;
+	overflow: auto;
+	background: url(../img/2.png) left no-repeat, url("../img/3.png") right no-repeat,
+		url("../img/6.png") center no-repeat;
+}
+
+.background__list {
+	margin: 50px;
+	padding: 50px;
+	font-size: 20px;
+	color: black;
+	font-family: "Proxima Nova Rg";
+	font-style: italic;
+	text-align: justify;
+	letter-spacing: 0.1em;
+	word-spacing: 0.2em;
+}
+
+.background__list li {
+	padding: 0px 0px 0px 50px;
+	min-height: 50px;
+	background: url("../img/star.png") 0px -5px no-repeat;
+	margin: 0px 0px 10px 10px;
+}
+
+.button {
+	color: white;
+	font-size: 20px;
+	font-family: "Proxima Nova Rg";
+	font-style: normal;
+	text-transform: uppercase;
+	border-radius: 25px;
+	padding: 10px 30px;
+	max-width: 300px;
+	box-shadow: 0px 5px 0px 0px #d60e0e;
+	background: linear-gradient(#ff59a6, #ff2c7a);
+}
+
+.button span {
+	display: inline-block;
+	padding: 5px 0px 0px 45px;
+	background: url("../img/7.png") 0 0 / contain no-repeat;
+}
